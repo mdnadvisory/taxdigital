@@ -107,67 +107,70 @@
 </section>
 <!-- contact form start -->
 <section class="contact-form-wrap section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-12 col-sm-12">
-                 <form id="contact-form" class="contact__form" method="post" action="mail.php">
-                 <!-- form message -->
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="alert alert-success contact__msg" style="display: none" role="alert">
-                                Your message was sent successfully.
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end message -->
-                    <span class="text-color">Send a message</span>
-                    <h3 class="text-md mb-4">Contact Form</h3>
-                    <div class="form-group">
-                        <input name="name" type="text" class="form-control" placeholder="Your Name">
-                    </div>
-                    <div class="form-group">
-                        <input name="email" type="email" class="form-control" placeholder="Email Address">
-                    </div>
-                    <div class="form-group-2 mb-4">
-                        <textarea name="message" class="form-control" rows="4" placeholder="Your Message"></textarea>
-                    </div>
-                    <button class="btn btn-main" name="submit" type="submit">Send Message</button>
-                </form>
+  <div class="container">
+    <div class="row">
+      <!-- Contact Form -->
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <form id="contact-form" class="contact__form" method="POST" action="https://formsubmit.co/ajax/info@taxdigital.in">
+          <!-- Popup message -->
+          <div class="row">
+            <div class="col-12">
+              <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                Your message was sent successfully.
+              </div>
             </div>
+          </div>
 
-            <div class="col-lg-5 col-sm-12">
-                <div class="contact-content pl-lg-5 mt-5 mt-lg-0">
-                    <span class="text-muted">We are Professionals</span>
-                    <h2 class="mb-5 mt-2">Don’t Hesitate to contact with us for any kind of information</h2>
+          <span class="text-color">Send a message</span>
+          <h3 class="text-md mb-4">Contact Form</h3>
 
-                    <ul class="address-block list-unstyled">
-                        <li>
-                            <i class="ti-direction mr-3"></i>Azad Road, Amroha, Uttar Pradesh - 244221
-                        </li>
-                        <li>
-                            <i class="ti-email mr-3"></i>Email: info@taxdigital.in
-                        </li>
-                        <li>
-                            <i class="ti-mobile mr-3"></i>Phone:+91 9627517592
-                        </li>
-                    </ul>
+          <div class="form-group">
+            <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+          </div>
 
-                    <ul class="social-icons list-inline mt-5">
-                        <li class="list-inline-item">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+          <div class="form-group">
+            <input name="email" type="email" class="form-control" placeholder="Email Address" required>
+          </div>
+
+          <div class="form-group">
+            <input name="subject" type="text" class="form-control" placeholder="Subject" required>
+          </div>
+
+          <div class="form-group-2 mb-4">
+            <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+          </div>
+
+          <!-- Hidden fields -->
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" style="display:none">
+
+          <button class="btn btn-main" name="submit" type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Right-side content -->
+      <div class="col-lg-5 col-sm-12">
+        <div class="contact-content pl-lg-5 mt-5 mt-lg-0">
+          <span class="text-muted">We are Professionals</span>
+          <h2 class="mb-5 mt-2">Don’t Hesitate to contact with us for any kind of information</h2>
+
+          <ul class="address-block list-unstyled">
+            <li><i class="ti-direction mr-3"></i>Azad Road, Amroha, Uttar Pradesh - 244221</li>
+            <li><i class="ti-email mr-3"></i>Email: info@taxdigital.in</li>
+            <li><i class="ti-mobile mr-3"></i>Phone: +91 9627517592</li>
+          </ul>
+
+          <ul class="social-icons list-inline mt-5">
+            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
         </div>
+      </div>
     </div>
+  </div>
 </section>
+
 
 <!-- footer Start -->
 <footer class="footer section">
@@ -198,24 +201,26 @@
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-6 col-sm-6">
-				<div class="widget">
-					<h4 class="text-capitalize mb-4">Subscribe Us</h4>
-					<p>Subscribe to get latest news article and resources  </p>
+  <div class="widget">
+    <h4 class="text-capitalize mb-4">Subscribe Us</h4>
+    <p>Subscribe to get latest news articles and resources</p>
 
-					<form action="#" class="sub-form">
-						<input type="text" class="form-control mb-3" placeholder="Subscribe Now ...">
-						<a href="#" class="btn btn-main btn-small">subscribe</a>
-					</form>
-				</div>
-			</div>
-
+    <form action="https://formsubmit.co/info@taxdigital.in" method="POST" class="sub-form">
+      <input type="email" name="email" class="form-control mb-3" placeholder="Enter your email" required>
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://www.taxdigital.in/thanks.html">
+      <input type="text" name="_honey" style="display:none">
+      <button type="submit" class="btn btn-main btn-small">Subscribe</button>
+    </form>
+  </div>
+</div>
 			<div class="col-lg-3 ml-auto col-sm-6">
 				<div class="widget">
 					<div class="logo mb-4">
 						<h3>Tax<span>Digital.in</span></h3>
 					</div>
 					<h6><a href="mailto:info@taxdigital.in" >info@taxdigital.in</a></h6>
-					<a href="tel:+91 9627517592"><span class="text-color h4">+91 9627517592</span></a>
+					<a href="tel:+91 9627517592"><span class="text-color h6">91 9627517592</span></a>
 				</div>
 			</div>
 		</div>
