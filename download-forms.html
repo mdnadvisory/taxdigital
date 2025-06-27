@@ -111,6 +111,14 @@
           border-radius: 15px;
           box-shadow: 0 0 10px rgba(0,0,0,0.05);
         ">
+        <!-- ✅ Disable CAPTCHA -->
+          <input type="hidden" name="_captcha" value="false">
+  
+        <!-- ✅ Redirect after submission -->
+          <input type="hidden" name="_next" value="https://taxdigital.in/thanks.html">
+  
+        <!-- ✅ Spam protection honeypot field -->
+          <input type="text" name="_honey" style="display:none">
           <div class="form-group">
             <label>Your Name</label>
             <input type="text" name="name" class="form-control" placeholder="Enter full name" required>
@@ -131,7 +139,7 @@
             </select>
           </div>
           <button type="submit" class="btn btn-main btn-block mt-3">Request & Download</button>
-          <input type="hidden" name="_next" value="https://taxdigital.in/thank-you.html">
+          <input type="hidden" name="_next" value="https://taxdigital.in/thanks.html">
         </form>
       </div>
     </div>
