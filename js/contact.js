@@ -8,7 +8,7 @@
     message.fadeIn().removeClass('alert-danger').addClass('alert-success');
     message.text("✅ Message sent successfully!");
     setTimeout(() => message.fadeOut(), 3000);
-    form.find('input:not([type="submit"]), textarea').val('');
+    form[0].reset();
   }
 
   function fail_func(data) {
@@ -19,15 +19,19 @@
 
   form.submit(function (e) {
     e.preventDefault();
-    const form_data = $(this).serialize();
+    const form_data = form.serialize();
 
     $.ajax({
       type: 'POST',
       url: form.attr('action'),
-      data: form_data
-    })
-      .done(done_func)
-      .fail(fail_func);
+      data: form_data,
+      dataType: 'json',
+      headers: {
+        'Accept': 'application/json'
+      },
+      success: done_func,
+      error: fail_func
+    });
   });
 
 })(jQuery);
