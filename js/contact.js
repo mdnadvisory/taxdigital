@@ -24,14 +24,10 @@
     $.ajax({
       type: 'POST',
       url: form.attr('action'),
-      data: form_data,
-      dataType: 'json',
-      headers: {
-        'Accept': 'application/json'
-      }
+      data: form_data
     })
-    .done(done_func)
-    .fail(fail_func);
+      .done(done_func)
+      .fail(fail_func);
   });
 
 })(jQuery);
