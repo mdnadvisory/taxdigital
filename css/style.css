@@ -14,21 +14,6 @@ body {
   color: rgba(0, 0, 0, 0.65);
 }
 
-/* Force grey for all icons */
-i[class^="fa-"],
-i[class*=" fa-"],
-i[class^="ti-"],
-a i[class^="fa-"],
-a i[class*=" fa-"],
-a i[class^="ti-"] {
-  color: grey !important;
-}
-
-/* Optional: Neutralize anchor effect */
-a {
-  color: inherit !important;
-  text-decoration: none;
-}
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "Poppins", sans-serif;
