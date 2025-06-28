@@ -14,13 +14,18 @@ body {
   color: rgba(0, 0, 0, 0.65);
 }
 
-/* Grey color for only FontAwesome & Themify icons */
+/* Grey color for FontAwesome and Themify icons (inside or outside <a>) */
 i.fa,
 i.fab,
 i.fas,
 i.far,
-i.ti {
-  color: grey;
+i.ti,
+a i.fa,
+a i.fab,
+a i.fas,
+a i.far,
+a i.ti {
+  color: #f2f2f2;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
