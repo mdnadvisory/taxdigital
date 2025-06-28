@@ -14,12 +14,16 @@ body {
   color: rgba(0, 0, 0, 0.65);
 }
 
-/* Grey color for all Font Awesome and Themify icons */
+/* Make all Font Awesome and Themify icons grey, including those inside anchor tags */
 i[class^="fa-"],
 i[class*=" fa-"],
-i[class^="ti-"] {
+i[class^="ti-"],
+a i[class^="fa-"],
+a i[class*=" fa-"],
+a i[class^="ti-"] {
   color: grey;
 }
+
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "Poppins", sans-serif;
