@@ -14,6 +14,15 @@ body {
   color: rgba(0, 0, 0, 0.65);
 }
 
+/* Grey color for only FontAwesome & Themify icons */
+i.fa,
+i.fab,
+i.fas,
+i.far,
+i.ti {
+  color: grey;
+}
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
