@@ -14,9 +14,12 @@ body {
   color: rgba(0, 0, 0, 0.65);
 }
 
-i {
-    color: grey;
-  }
+/* Grey color for all Font Awesome and Themify icons */
+i[class^="fa-"],
+i[class*=" fa-"],
+i[class^="ti-"] {
+  color: grey;
+}
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "Poppins", sans-serif;
