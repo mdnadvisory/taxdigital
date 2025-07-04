@@ -1381,7 +1381,7 @@ h3.quote::before {
   .dropdown-menu {
     display: none;
     width: 100%;
-    text-align: right;
+    text-align: center;
   }
 }
 
@@ -1413,7 +1413,7 @@ h3.quote::before {
   .dropdown-menu {
     display: none;
     width: 100%;
-    text-align: right;
+    text-align: center;
   }
 }
 
